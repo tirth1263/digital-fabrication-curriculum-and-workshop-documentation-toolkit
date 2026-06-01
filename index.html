@@ -1,0 +1,335 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A modern digital fabrication curriculum toolkit for robotic fabrication workshops, experiments, safety workflows, and documentation templates."
+    />
+    <title>Digital Fabrication Curriculum Toolkit</title>
+    <link rel="preload" href="assets/fabrication-hero.png" as="image" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script defer src="assets/app.js"></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Digital Fabrication Curriculum Toolkit home">
+        <span class="brand-mark" aria-hidden="true"><i data-lucide="bot"></i></span>
+        <span>Fabrication Toolkit</span>
+      </a>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#curriculum">Curriculum</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#safety">Safety</a>
+        <a href="#templates">Templates</a>
+      </nav>
+
+      <a
+        class="header-action"
+        href="https://github.com/tirth1263/digital-fabrication-curriculum-and-workshop-documentation-toolkit"
+        target="_blank"
+        rel="noreferrer"
+      >
+        <i data-lucide="external-link" aria-hidden="true"></i>
+        <span>GitHub</span>
+      </a>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <img
+          class="hero-image"
+          src="assets/fabrication-hero.png"
+          alt="Futuristic robotic fabrication lab with a robot arm shaping a colorful material sample"
+        />
+        <div class="hero-overlay" aria-hidden="true"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+
+        <div class="hero-content">
+          <p class="eyebrow">2024 curriculum support toolkit</p>
+          <h1 id="hero-title">Digital Fabrication Curriculum Toolkit</h1>
+          <p class="hero-copy">
+            A vibrant training interface for robotic fabrication modules, experiment planning,
+            safety readiness, and workshop documentation.
+          </p>
+          <div class="hero-actions" aria-label="Primary actions">
+            <a class="button button-primary" href="#curriculum">
+              <i data-lucide="layout-dashboard" aria-hidden="true"></i>
+              <span>Open Toolkit</span>
+            </a>
+            <a class="button button-secondary" href="docs/curriculum-overview.md">
+              <i data-lucide="book-open-check" aria-hidden="true"></i>
+              <span>Read Docs</span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="hero-console" aria-label="Toolkit snapshot">
+          <div class="console-heading">
+            <span class="signal-dot" aria-hidden="true"></span>
+            Workshop System
+          </div>
+          <div class="console-metrics">
+            <span><strong>06</strong> Modules</span>
+            <span><strong>04</strong> Experiments</span>
+            <span><strong>04</strong> Safety Docs</span>
+            <span><strong>06</strong> Templates</span>
+          </div>
+        </aside>
+      </section>
+
+      <section class="quick-bar" aria-label="Toolkit shortcuts">
+        <a href="docs/facilitator-guide.md">
+          <i data-lucide="clipboard-check" aria-hidden="true"></i>
+          <span>Facilitator Guide</span>
+        </a>
+        <a href="docs/assessment-rubrics.md">
+          <i data-lucide="badge-check" aria-hidden="true"></i>
+          <span>Rubrics</span>
+        </a>
+        <a href="docs/diagrams/robotic-fabrication-workflow.md">
+          <i data-lucide="workflow" aria-hidden="true"></i>
+          <span>Workflow Diagram</span>
+        </a>
+        <button type="button" data-copy="git clone https://github.com/tirth1263/digital-fabrication-curriculum-and-workshop-documentation-toolkit.git">
+          <i data-lucide="copy" aria-hidden="true"></i>
+          <span>Clone Repo</span>
+        </button>
+      </section>
+
+      <section class="section section-light" id="curriculum" aria-labelledby="curriculum-title">
+        <div class="section-heading">
+          <p class="eyebrow">Learning sequence</p>
+          <h2 id="curriculum-title">Curriculum Command Deck</h2>
+          <p>
+            Six workshop modules move learners from orientation to capstone delivery with
+            checkpoints for safety, process thinking, and documentation.
+          </p>
+        </div>
+
+        <div class="module-grid">
+          <a class="module-card accent-cyan" href="docs/modules/01-introduction-to-digital-fabrication.md">
+            <span class="module-number">01</span>
+            <h3>Introduction to Digital Fabrication</h3>
+            <p>Workflow stages, machine context, and documentation habits.</p>
+            <span class="module-meta"><i data-lucide="clock-3" aria-hidden="true"></i> 60-90 min</span>
+          </a>
+          <a class="module-card accent-coral" href="docs/modules/02-design-for-robotic-fabrication.md">
+            <span class="module-number">02</span>
+            <h3>Design for Robotic Fabrication</h3>
+            <p>Translate design intent into constraints, tests, and risk notes.</p>
+            <span class="module-meta"><i data-lucide="clock-3" aria-hidden="true"></i> 90-120 min</span>
+          </a>
+          <a class="module-card accent-lime" href="docs/modules/03-robot-programming-basics.md">
+            <span class="module-number">03</span>
+            <h3>Robot Programming Basics</h3>
+            <p>Motion types, tool frames, speeds, and dry-run reasoning.</p>
+            <span class="module-meta"><i data-lucide="clock-3" aria-hidden="true"></i> 90-120 min</span>
+          </a>
+          <a class="module-card accent-amber" href="docs/modules/04-end-effector-and-toolpath-planning.md">
+            <span class="module-number">04</span>
+            <h3>End Effector and Toolpath Planning</h3>
+            <p>Tool behavior, path strategy, process variables, and setup logic.</p>
+            <span class="module-meta"><i data-lucide="clock-3" aria-hidden="true"></i> 90-150 min</span>
+          </a>
+          <a class="module-card accent-iris" href="docs/modules/05-material-experimentation.md">
+            <span class="module-number">05</span>
+            <h3>Material Experimentation</h3>
+            <p>Controlled trials, variables, measurements, and next-test decisions.</p>
+            <span class="module-meta"><i data-lucide="clock-3" aria-hidden="true"></i> 2-3 hr</span>
+          </a>
+          <a class="module-card accent-mint" href="docs/modules/06-capstone-workshop.md">
+            <span class="module-number">06</span>
+            <h3>Capstone Workshop</h3>
+            <p>Plan, fabricate, document, critique, and present a compact project.</p>
+            <span class="module-meta"><i data-lucide="clock-3" aria-hidden="true"></i> 1 day</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="section section-ink" id="experiments" aria-labelledby="experiments-title">
+        <div class="section-heading">
+          <p class="eyebrow">Fabrication tests</p>
+          <h2 id="experiments-title">Experiment Launchpad</h2>
+          <p>
+            Pick an experiment track, compare variables, and open the full outline when the
+            workshop is ready to run.
+          </p>
+        </div>
+
+        <div class="segmented-control" role="group" aria-label="Experiment filters">
+          <button class="is-active" type="button" data-filter="all">
+            <i data-lucide="sparkles" aria-hidden="true"></i>
+            <span>All</span>
+          </button>
+          <button type="button" data-filter="material">
+            <i data-lucide="boxes" aria-hidden="true"></i>
+            <span>Material</span>
+          </button>
+          <button type="button" data-filter="motion">
+            <i data-lucide="move-3d" aria-hidden="true"></i>
+            <span>Motion</span>
+          </button>
+          <button type="button" data-filter="sensing">
+            <i data-lucide="scan-line" aria-hidden="true"></i>
+            <span>Sensing</span>
+          </button>
+        </div>
+
+        <div class="experiment-grid" data-experiments>
+          <article class="experiment-card" data-track="material">
+            <div class="experiment-topline">
+              <span>Material</span>
+              <i data-lucide="layers-3" aria-hidden="true"></i>
+            </div>
+            <h3>Extrusion Path Calibration</h3>
+            <p>Balance speed, flow, spacing, and layer height for bead quality.</p>
+            <a href="docs/experiments/extrusion-path-calibration.md">Open outline</a>
+          </article>
+          <article class="experiment-card" data-track="material">
+            <div class="experiment-topline">
+              <span>Thermal</span>
+              <i data-lucide="flame-kindling" aria-hidden="true"></i>
+            </div>
+            <h3>Robotic Hot Wire Cutting</h3>
+            <p>Evaluate wire temperature, travel speed, and foam response.</p>
+            <a href="docs/experiments/robotic-hot-wire-cutting.md">Open outline</a>
+          </article>
+          <article class="experiment-card" data-track="motion">
+            <div class="experiment-topline">
+              <span>Motion</span>
+              <i data-lucide="crosshair" aria-hidden="true"></i>
+            </div>
+            <h3>Pick and Place Patterning</h3>
+            <p>Test grip force, approach height, placement speed, and release timing.</p>
+            <a href="docs/experiments/pick-and-place-patterning.md">Open outline</a>
+          </article>
+          <article class="experiment-card" data-track="sensing">
+            <div class="experiment-topline">
+              <span>Sensing</span>
+              <i data-lucide="radar" aria-hidden="true"></i>
+            </div>
+            <h3>Sensor-Assisted Fabrication</h3>
+            <p>Use readings to inform setup verification and process monitoring.</p>
+            <a href="docs/experiments/sensor-assisted-fabrication.md">Open outline</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section-safety" id="safety" aria-labelledby="safety-title">
+        <div class="section-heading">
+          <p class="eyebrow">Readiness layer</p>
+          <h2 id="safety-title">Safety Console</h2>
+          <p>
+            A compact preflight panel for workshop readiness, paired with the full safety
+            documents in the repository.
+          </p>
+        </div>
+
+        <div class="safety-layout">
+          <div class="readiness-panel">
+            <div class="readiness-header">
+              <div>
+                <span class="label">Preflight readiness</span>
+                <strong data-progress-label>0%</strong>
+              </div>
+              <div class="progress-track" aria-hidden="true">
+                <span data-progress-bar></span>
+              </div>
+            </div>
+
+            <form class="checklist" data-checklist>
+              <label>
+                <input type="checkbox" />
+                <span>Emergency stops identified</span>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <span>Robot cell boundary marked</span>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <span>PPE and material controls ready</span>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <span>Dry run completed before output</span>
+              </label>
+              <label>
+                <input type="checkbox" />
+                <span>Documentation station prepared</span>
+              </label>
+            </form>
+          </div>
+
+          <div class="safety-links">
+            <a href="docs/safety/general-workshop-safety-checklist.md">
+              <i data-lucide="shield-check" aria-hidden="true"></i>
+              <span>General Workshop Safety</span>
+            </a>
+            <a href="docs/safety/robotic-cell-safety-checklist.md">
+              <i data-lucide="scan-eye" aria-hidden="true"></i>
+              <span>Robotic Cell Safety</span>
+            </a>
+            <a href="docs/safety/ppe-and-material-handling.md">
+              <i data-lucide="hard-hat" aria-hidden="true"></i>
+              <span>PPE and Material Handling</span>
+            </a>
+            <a href="docs/safety/emergency-response-plan.md">
+              <i data-lucide="siren" aria-hidden="true"></i>
+              <span>Emergency Response Plan</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-light" id="templates" aria-labelledby="templates-title">
+        <div class="section-heading">
+          <p class="eyebrow">Documentation kit</p>
+          <h2 id="templates-title">Workshop Templates</h2>
+          <p>
+            Copy-ready structures for planning, running, and summarizing robotic fabrication
+            workshops.
+          </p>
+        </div>
+
+        <div class="template-grid">
+          <a href="docs/templates/workshop-brief-template.md">
+            <i data-lucide="file-pen-line" aria-hidden="true"></i>
+            <span>Workshop Brief</span>
+          </a>
+          <a href="docs/templates/experiment-outline-template.md">
+            <i data-lucide="flask-conical" aria-hidden="true"></i>
+            <span>Experiment Outline</span>
+          </a>
+          <a href="docs/templates/risk-assessment-template.md">
+            <i data-lucide="triangle-alert" aria-hidden="true"></i>
+            <span>Risk Assessment</span>
+          </a>
+          <a href="docs/templates/safety-inspection-log.md">
+            <i data-lucide="list-checks" aria-hidden="true"></i>
+            <span>Safety Inspection Log</span>
+          </a>
+          <a href="docs/templates/participant-sign-in-template.md">
+            <i data-lucide="users-round" aria-hidden="true"></i>
+            <span>Participant Sign-In</span>
+          </a>
+          <a href="docs/templates/workshop-summary-template.md">
+            <i data-lucide="presentation" aria-hidden="true"></i>
+            <span>Workshop Summary</span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Digital Fabrication Curriculum and Workshop Documentation Toolkit</span>
+      <a href="https://github.com/tirth1263/digital-fabrication-curriculum-and-workshop-documentation-toolkit">
+        View repository
+      </a>
+    </footer>
+  </body>
+</html>

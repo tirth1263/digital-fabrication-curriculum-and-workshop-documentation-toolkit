@@ -8,12 +8,19 @@ The toolkit helps facilitators plan and document hands-on digital fabrication wo
 
 ## What is included
 
+- A colorful static web UI in [index.html](index.html)
 - Curriculum modules for a six-part robotic fabrication learning sequence
 - Experiment outlines for calibration, material testing, end-effector behavior, and sensor-assisted workflows
 - Safety checklists for general workshop practice, robotic cell operation, PPE, and emergency response
 - Workshop templates for briefs, experiment logs, risk assessments, attendance, and final summaries
 - Mermaid diagrams for workflow planning, shop layout, and documentation processes
 - Assessment rubrics for safety, process documentation, fabrication quality, and reflection
+
+## Web UI
+
+The project includes a modern static interface for browsing the toolkit:
+
+[https://tirth1263.github.io/digital-fabrication-curriculum-and-workshop-documentation-toolkit/](https://tirth1263.github.io/digital-fabrication-curriculum-and-workshop-documentation-toolkit/)
 
 ## Recommended use
 
@@ -64,4 +71,3 @@ This toolkit is a curriculum and documentation aid. It does not replace machine 
 ## License
 
 Released under the MIT License. See [LICENSE](LICENSE).
-
